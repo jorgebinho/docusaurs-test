@@ -2,46 +2,60 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# 👋 Bem-vindo à Wiki
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Esse site reúne receitas, guias técnicos e tudo mais que for útil para o dia a dia.
 
-## Getting Started
+## Como adicionar um novo item
 
-Get started by **creating a new site**.
+Quer contribuir? Ótimo! Siga os passos abaixo.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+### 1. Abra um Pull Request
 
-### What you'll need
+Todo conteúdo novo entra via PR no repositório:
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+👉 [github.com/jorgebinho/docusaurs-test](https://github.com/jorgebinho/docusaurs-test)
 
-## Generate a new site
+Crie uma branch com um nome descritivo, adicione seu arquivo e abra o PR para revisão.
 
-Generate a new Docusaurus site using the **classic template**.
+### 2. Crie o arquivo `.mdx`
 
-The classic template will automatically be added to your project after you run the command:
+Os arquivos ficam dentro da pasta `docs/`, organizados por categoria:
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+### 3. Estrutura básica de um arquivo `.mdx`
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+Todo arquivo precisa começar com um frontmatter (as linhas entre ---):
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+O frontmatter tem essa cara:
 
-## Start your site
+sidebar_position: 1
 
-Run the development server:
+Onde sidebar_position define a ordem no menu lateral. Depois disso é Markdown normal.
 
-```bash
-cd my-website
-npm run start
-```
+### 4. Recursos disponíveis
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+Além do Markdown padrão, você pode usar admonitions e tabs.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+:::tip Dica
+Texto da dica aqui.
+:::
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+:::info Informação
+Texto informativo aqui.
+:::
+
+:::warning Atenção
+Texto de aviso aqui.
+:::
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="mac" label="macOS" default>
+    Instruções para macOS aqui.
+  </TabItem>
+  <TabItem value="windows" label="Windows">
+    Instruções para Windows aqui.
+  </TabItem>
+</Tabs>
