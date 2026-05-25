@@ -20,6 +20,8 @@ const config = {
   organizationName: 'jorgebinho',
   projectName: 'docusaurs-test',
 
+  trailingSlash: false,
+
   onBrokenLinks: 'throw',
 
   // Even if you don't use internationalization, you can use this field to set
