@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkmeu_site=globalThis.webpackChunkmeu_site||[]).push([[849],{3012(e){e.exports=JSON.parse('{"metadata":{"permalink":"/docusaurs-test/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":0,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
